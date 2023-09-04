@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    username: testUser
+    url: jdbc:mysql://localhost:3306/vendor?useSSL=false
+    password: testuser
+  jpa:
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+#JPA Setting
+  jpa.hibernate.ddl-auto: update

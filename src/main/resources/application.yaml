@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    username: testUser
+    url: jdbc:mysql://localhost:3306/vendor?useSSL=false
+    password: testuser
+  jpa:
+    show-sql: true
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+  main:
+    allow-circular-references: true
+
+#JPA Setting
+  jpa.hibernate.ddl-auto: update
+
+# logging:
+#   level:
+#     com.springboot.restdemo.config: INFO
+#     com.springboot.restdemo.controller: DEBUG
+#     org.hibernate: ERROR
+#   file:
+#     name: myapp.log

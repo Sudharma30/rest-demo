@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Vendor + cloudVendor.getVendorId() + Details</title>
+</head>
+<body th:with="vendor=${vendor}, license=${vendor.license}, items=${vendor.items}" >
+<h1>Vendor Details</h1>
+<p>Vendor ID: <span th:text="${vendor.vendorId}"></span> </p>
+<p>Vendor Name:  <span th:text="${vendor.vendorName}"></span> </p>
+<p>Vendor Address:  <span th:text="${vendor.vendorAddress}"></span> </p>
+<p>Vendor Phone Number:  <span th:text="${vendor.vendorPhoneNumber}"></span> </p>
+<p>Vendor Lisense ID:  <span th:text="${license.licenseId}"></span> </p>
+<p>Vendor Lisense Number:  <span th:text="${license.licenseNumber}"></span> </p>
+<p>Vendor Lisense Issue Year:  <span th:text="${license.licenseIssueYear}"></span> </p>
+<h4>Items</h4>
+<ul>
+    <li th:each="item:${items}">
+        <p>Item ID: <span th.text="${item.itemId}"></span> </p>
+        <p>Item Name: <span th.text="${item.itemName}"></span> </p>
+        <p>Item Description: <span th.text="${item.itemDescription}"></span> </p>
+        <p>Item Price: <span th.text="${item.itemPrice}"></span> </p>
+    </li>
+</ul>
+
+<img src="rest-demo-image/target/classes/static/Images/Vendor 1BCX846151.png" alt="Profile" width="500px">
+</body>
+</html>

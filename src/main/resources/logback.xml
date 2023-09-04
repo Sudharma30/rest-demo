@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+<include resource="org/springframework/boot/logging/logback/default.xml"/>
+    <!-- Console Appender -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Error Log Appender -->
+    <appender name="errorLog" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <file>logs/error.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logs/error-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>5KB</maxFileSize>
+            <maxHistory>15</maxHistory> <!-- Keep 15 days of logs -->
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Non-Error Log Appender -->
+    <appender name="myapp" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>DENY</onMatch>
+            <onMismatch>ACCEPT</onMismatch>
+        </filter>
+        <file>logs/myapp.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>logs/myapp-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <maxFileSize>10KB</maxFileSize>
+            <maxHistory>15</maxHistory> <!-- Keep 15 days of logs -->
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date [%thread] %-5level %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root Logger for Error Logs -->
+    <logger name="com.springboot.restdemo.controller" level="ERROR">
+       <appender-ref ref="errorLog" />
+       <appender-ref ref="console" /> <!--Add console appender-->
+    </logger>
+
+    <logger name="com.springboot.restdemo.controller" level="INFO">
+        <appender-ref ref="myapp" />
+        <appender-ref ref="console" /> <!--Add console appender-->
+     </logger>
+
+     <logger name="com.springboot.restdemo.controller" level="DEBUG">
+        <appender-ref ref="myapp" />
+        <appender-ref ref="console" /> <!--Add console appender-->
+     </logger>
+
+    <root level="INFO">
+        <appender-ref ref="console" />
+        <appender-ref ref="myapp" />
+    </root>
+
+</configuration>
