@@ -15,10 +15,10 @@ public class ItemServiceImpl implements ItemService
     @Autowired
     ItemRepository itemRepository;
 
-    public ItemServiceImpl(ItemRepository itemRepository)
-    {
-        this.itemRepository = itemRepository;
-    }
+    // public ItemServiceImpl(ItemRepository itemRepository)
+    // {
+    //     this.itemRepository = itemRepository;
+    // }
 
     @Override
     public String createItem(Item item)

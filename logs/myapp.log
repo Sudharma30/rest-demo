@@ -1,43 +1,36 @@
-2023-09-04 16:43:04,286 [main] INFO  c.s.restdemo.RestDemoApplication - Starting RestDemoApplication using Java 17.0.7 with PID 30340 (D:\Important\SpringBoot\rest-demo-image\target\classes started by sudha in D:\Important\SpringBoot\rest-demo-image)
-2023-09-04 16:43:04,289 [main] INFO  c.s.restdemo.RestDemoApplication - No active profile set, falling back to 1 default profile: "default"
-2023-09-04 16:43:05,193 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-09-04 16:43:05,281 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
-2023-09-04 16:43:06,136 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
-2023-09-04 16:43:06,158 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
-2023-09-04 16:43:06,162 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2023-09-04 16:43:06,162 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
-2023-09-04 16:43:06,329 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2023-09-04 16:43:06,330 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1982 ms
-2023-09-04 16:43:06,736 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-09-04 16:43:06,821 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
-2023-09-04 16:43:06,827 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
-2023-09-04 16:43:07,107 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-2023-09-04 16:43:07,237 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-09-04 16:43:07,261 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2023-09-04 16:43:07,523 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b6fd0
-2023-09-04 16:43:07,529 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2023-09-04 16:43:07,853 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
-2023-09-04 16:43:08,438 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-09-04 16:43:08,533 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-09-04 16:43:09,488 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-09-04 16:43:09,635 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-2023-09-04 16:43:10,099 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
-2023-09-04 16:43:10,168 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@530aa75c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@593d0173, org.springframework.security.web.context.SecurityContextHolderFilter@315bb2bb, org.springframework.security.web.header.HeaderWriterFilter@32192a69, org.springframework.security.web.authentication.logout.LogoutFilter@5e609b42, com.springboot.restdemo.filter.JwtAuthenticationFilter@363ee411, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c9015c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36b2b6e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a0a93ce, org.springframework.security.web.session.SessionManagementFilter@309ac89e, org.springframework.security.web.access.ExceptionTranslationFilter@1046aaa4, org.springframework.security.web.access.intercept.AuthorizationFilter@15f3f9cf]
-2023-09-04 16:43:10,748 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
-2023-09-04 16:43:10,767 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
-2023-09-04 16:43:10,781 [main] INFO  c.s.restdemo.RestDemoApplication - Started RestDemoApplication in 6.935 seconds (process running for 7.56)
-2023-09-04 16:43:13,157 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-09-04 16:43:13,158 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2023-09-04 16:43:13,159 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
-2023-09-04 16:43:20,874 [http-nio-8090-exec-1] INFO  c.s.r.controller.ItemController - User requested the item 1 details
-2023-09-04 16:43:20,874 [http-nio-8090-exec-1] INFO  c.s.r.controller.ItemController - User requested the item 1 details
-2023-09-04 16:43:20,875 [http-nio-8090-exec-1] DEBUG c.s.r.controller.ItemController - Inside getItemDetails of Item Contoller
-2023-09-04 16:43:20,875 [http-nio-8090-exec-1] DEBUG c.s.r.controller.ItemController - Inside getItemDetails of Item Contoller
-2023-09-04 16:43:38,960 [http-nio-8090-exec-4] INFO  c.s.r.controller.ItemController - User requested the item 1 details
-2023-09-04 16:43:38,960 [http-nio-8090-exec-4] INFO  c.s.r.controller.ItemController - User requested the item 1 details
-2023-09-04 16:43:38,963 [http-nio-8090-exec-4] DEBUG c.s.r.controller.ItemController - Inside getItemDetails of Item Contoller
-2023-09-04 16:43:38,963 [http-nio-8090-exec-4] DEBUG c.s.r.controller.ItemController - Inside getItemDetails of Item Contoller
-2023-09-04 16:43:42,170 [http-nio-8090-exec-5] INFO  c.s.r.controller.VendorController - User requested the vendor 1 details
-2023-09-04 16:43:42,170 [http-nio-8090-exec-5] INFO  c.s.r.controller.VendorController - User requested the vendor 1 details
-2023-09-04 16:43:42,170 [http-nio-8090-exec-5] DEBUG c.s.r.controller.VendorController - Inside getVendorDetails of Vendor Contoller
-2023-09-04 16:43:42,170 [http-nio-8090-exec-5] DEBUG c.s.r.controller.VendorController - Inside getVendorDetails of Vendor Contoller
+2023-09-05 13:33:45,937 [main] INFO  c.s.restdemo.RestDemoApplication - Starting RestDemoApplication using Java 17.0.7 with PID 23284 (D:\Important\SpringBoot\rest-demo-image\target\classes started by sudha in D:\Important\SpringBoot\rest-demo-image)
+2023-09-05 13:33:45,945 [main] INFO  c.s.restdemo.RestDemoApplication - No active profile set, falling back to 1 default profile: "default"
+2023-09-05 13:33:47,389 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-09-05 13:33:47,539 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 129 ms. Found 4 JPA repository interfaces.
+2023-09-05 13:33:48,837 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2023-09-05 13:33:48,871 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2023-09-05 13:33:48,876 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-09-05 13:33:48,877 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+2023-09-05 13:33:49,112 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-09-05 13:33:49,114 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3065 ms
+2023-09-05 13:33:49,761 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-09-05 13:33:49,868 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+2023-09-05 13:33:49,875 [main] INFO  org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+2023-09-05 13:33:50,224 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-09-05 13:33:50,426 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-09-05 13:33:50,458 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2023-09-05 13:33:50,713 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c1e40d9
+2023-09-05 13:33:50,716 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2023-09-05 13:33:51,027 [main] INFO  o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+2023-09-05 13:33:51,751 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-09-05 13:33:51,834 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-09-05 13:33:53,900 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-09-05 13:33:54,562 [main] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2023-09-05 13:33:55,652 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-09-05 13:33:55,768 [main] INFO  o.s.s.w.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7fd7965b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@9742012, org.springframework.security.web.context.SecurityContextHolderFilter@76fdd5f1, org.springframework.security.web.header.HeaderWriterFilter@36299b83, org.springframework.security.web.authentication.logout.LogoutFilter@77e4ffe5, com.springboot.restdemo.filter.JwtAuthenticationFilter@48e3017a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2a4a95c4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71ae1cb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@118d7e0e, org.springframework.security.web.session.SessionManagementFilter@3993cecb, org.springframework.security.web.access.ExceptionTranslationFilter@7271320c, org.springframework.security.web.access.intercept.AuthorizationFilter@4ef7145f]
+2023-09-05 13:33:56,570 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2023-09-05 13:33:56,598 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2023-09-05 13:33:56,617 [main] INFO  c.s.restdemo.RestDemoApplication - Started RestDemoApplication in 11.396 seconds (process running for 12.521)
+2023-09-05 13:33:57,466 [RMI TCP Connection(1)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-09-05 13:33:57,467 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-09-05 13:33:57,468 [RMI TCP Connection(1)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-09-05 13:34:27,424 [http-nio-8090-exec-3] INFO  c.s.r.controller.ItemController - User requested the item 1 details
+2023-09-05 13:34:27,424 [http-nio-8090-exec-3] INFO  c.s.r.controller.ItemController - User requested the item 1 details
+2023-09-05 13:34:27,428 [http-nio-8090-exec-3] DEBUG c.s.r.controller.ItemController - Inside getItemDetails of Item Contoller
+2023-09-05 13:34:27,428 [http-nio-8090-exec-3] DEBUG c.s.r.controller.ItemController - Inside getItemDetails of Item Contoller
+2023-09-05 14:00:31,553 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m40s583ms453µs900ns).

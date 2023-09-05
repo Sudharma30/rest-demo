@@ -42,9 +42,9 @@ public class VendorServiceImpl implements VendorService
         return path;
     }
 
-    public VendorServiceImpl(VendorRepository vendorRepository) {
-        this.vendorRepository = vendorRepository;
-    }
+    // public VendorServiceImpl(VendorRepository vendorRepository) {
+    //     this.vendorRepository = vendorRepository;
+    // }
 
 
     @Override
@@ -150,7 +150,6 @@ public class VendorServiceImpl implements VendorService
             }
             vendorRepository.deleteById(vendorId);
             return "Succesfully Deleted Vendor "+vendorId;
-    
         }
         return "Vendor "+vendorId+" Not Found";
     }

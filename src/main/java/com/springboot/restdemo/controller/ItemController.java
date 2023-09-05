@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,12 +24,13 @@ public class ItemController
 {
     private static final Logger logger = LoggerFactory.getLogger(ItemController.class);
 
+    @Autowired
     ItemService itemService;
 
-    public ItemController(ItemService itemService)
-    {
-        this.itemService = itemService;
-    }
+    // public ItemController(ItemService itemService)
+    // {
+    //     this.itemService = itemService;
+    // }
     
     @GetMapping("{itemId}")
     @PreAuthorize("hasAuthority('ROLE_ADMIN') OR hasAuthority('ROLE_VENDOR') or hasAuthority('ROLE_CREATOR')")
